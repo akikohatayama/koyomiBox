@@ -12,6 +12,9 @@
 		17719CB31CB237D700EFFC9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17719CB11CB237D700EFFC9D /* Main.storyboard */; };
 		17719CB51CB237D700EFFC9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17719CB41CB237D700EFFC9D /* Assets.xcassets */; };
 		17719CB81CB237D700EFFC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17719CB61CB237D700EFFC9D /* LaunchScreen.storyboard */; };
+		17719CC01CB238AD00EFFC9D /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17719CBF1CB238AD00EFFC9D /* DateManager.swift */; };
+		17719CC21CB238D100EFFC9D /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17719CC11CB238D100EFFC9D /* CustomCell.swift */; };
+		17719CC41CB238FD00EFFC9D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17719CC31CB238FD00EFFC9D /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		17719CB41CB237D700EFFC9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17719CB71CB237D700EFFC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17719CB91CB237D700EFFC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17719CBF1CB238AD00EFFC9D /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		17719CC11CB238D100EFFC9D /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = SOURCE_ROOT; };
+		17719CC31CB238FD00EFFC9D /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			children = (
 				17719CAD1CB237D700EFFC9D /* AppDelegate.swift */,
 				17719CAF1CB237D700EFFC9D /* ViewController.swift */,
+				17719CBF1CB238AD00EFFC9D /* DateManager.swift */,
+				17719CC11CB238D100EFFC9D /* CustomCell.swift */,
+				17719CC31CB238FD00EFFC9D /* Color.swift */,
 				17719CB11CB237D700EFFC9D /* Main.storyboard */,
 				17719CB41CB237D700EFFC9D /* Assets.xcassets */,
 				17719CB61CB237D700EFFC9D /* LaunchScreen.storyboard */,
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					17719CA91CB237D700EFFC9D = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MU4W3X82X7;
 					};
 				};
 			};
@@ -136,6 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				17719CB01CB237D700EFFC9D /* ViewController.swift in Sources */,
+				17719CC01CB238AD00EFFC9D /* DateManager.swift in Sources */,
+				17719CC21CB238D100EFFC9D /* CustomCell.swift in Sources */,
+				17719CC41CB238FD00EFFC9D /* Color.swift in Sources */,
 				17719CAE1CB237D700EFFC9D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +262,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: akikohatayama@gmail.com (2NA33N8YZQ)";
 				INFOPLIST_FILE = Koyomi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chips.Koyomi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4b635fb4-3f8e-48c9-bdda-c6a4ec889862";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -260,10 +277,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: akikohatayama@gmail.com (2NA33N8YZQ)";
 				INFOPLIST_FILE = Koyomi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chips.Koyomi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4b635fb4-3f8e-48c9-bdda-c6a4ec889862";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -286,6 +307,7 @@
 				17719CBE1CB237D700EFFC9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
